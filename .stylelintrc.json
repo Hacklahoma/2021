@@ -1,0 +1,11 @@
+{
+  "extends": "stylelint-config-sass-guidelines",
+  "rules": {
+    "max-nesting-depth": null,
+    "color-named": null,
+    "selector-no-qualifying-type": null,
+    "selector-max-id": null,
+    "selector-max-compound-selectors": null
+  },
+  "ignoreFiles": ["**/*.js", "**/*.jsx"]
+}
