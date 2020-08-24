@@ -1,0 +1,58 @@
+$wires-ratio: 0.3226;
+$tv-ratio: 0.5457;
+
+.header {
+  .wires {
+    background-image: url('../images/wires.png');
+    background-position: center;
+    background-size: cover;
+    height: calc(1550px * #{$wires-ratio});
+    left: 50%;
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+    width: 1550px;
+  }
+
+  .tv {
+    background-image: url('../images/tv.png');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    height: calc(900px * #{$tv-ratio});
+    justify-content: center;
+    left: 50%;
+    position: absolute;
+    top: 20px;
+    transform: translateX(-50%);
+    width: 900px;
+
+    .content {
+      margin-top: 100px;
+    }
+  }
+
+  @media only screen and (max-width: 840px) {
+    .wires {
+      height: calc(1080px * #{$wires-ratio});
+      width: 1080px;
+    }
+
+    .tv {
+      height: calc(620px * #{$tv-ratio});
+      width: 620px;  
+    }
+  }
+
+  @media only screen and (max-width: 570px) {
+    .wires {
+      height: calc(730px * #{$wires-ratio});
+      width: 730px;
+    }
+
+    .tv {
+      height: calc(400px * #{$tv-ratio});
+      width: 400px;  
+    }
+  }
+}
