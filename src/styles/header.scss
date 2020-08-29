@@ -2,6 +2,8 @@ $wires-ratio: 0.3226;
 $tv-ratio: 0.5457;
 
 .header {
+  height: calc(1550px * #{$wires-ratio});
+
   .wires {
     background-image: url('../images/wires.png');
     background-position: center;
@@ -19,20 +21,64 @@ $tv-ratio: 0.5457;
     background-position: center;
     background-size: cover;
     display: flex;
-    height: calc(900px * #{$tv-ratio});
+    height: calc(850px * #{$tv-ratio});
     justify-content: center;
     left: 50%;
     position: absolute;
     top: 20px;
     transform: translateX(-50%);
-    width: 900px;
+    width: 850px;
 
     .content {
-      margin-top: 100px;
+      align-items: center;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      text-align: center;
+
+      .head-date {
+        font-weight: 800;
+        text-align: left;
+
+        p {
+          margin-bottom: 6px;
+        }
+
+        h1 {
+          background: linear-gradient(181deg, #f03812 60%, #2c9fa2 200%);
+          background-clip: text;
+          font-size: 3em;
+          font-style: italic;
+          margin-right: -8px;
+          padding-right: 8px;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+
+      .subtitle {
+        margin: 15px 0 35px;
+        max-width: 450px;
+      }
+      
+      .register {
+        background: #2c9fa2;
+        border-radius: 2px;
+        color: white;
+        font-weight: 800;
+        padding: 7px 14px;
+        text-decoration: none;
+        transition: background 150ms;
+
+        &:hover {
+          background: #21797c;
+        }
+      }
     }
   }
 
   @media only screen and (max-width: 840px) {
+    height: calc(1080px * #{$wires-ratio});
+
     .wires {
       height: calc(1080px * #{$wires-ratio});
       width: 1080px;
@@ -42,10 +88,34 @@ $tv-ratio: 0.5457;
       height: calc(620px * #{$tv-ratio});
       top: 15px;
       width: 620px;
+
+      .content {
+        .head-date {
+          p {
+            margin-bottom: 3px;
+          }
+
+          h1 {
+            font-size: 2.45em;
+          }
+        }
+
+        p,
+        a {
+          font-size: 0.9em;
+        }
+
+        .subtitle {
+          margin: 10px 0 25px;
+          max-width: 400px;
+        }
+      }
     }
   }
 
   @media only screen and (max-width: 570px) {
+    height: calc(730px * #{$wires-ratio});
+
     .wires {
       height: calc(730px * #{$wires-ratio});
       width: 730px;
@@ -54,7 +124,33 @@ $tv-ratio: 0.5457;
     .tv {
       height: calc(400px * #{$tv-ratio});
       top: 10px;
-      width: 400px;  
+      width: 400px;
+
+      .content {
+        .head-date {
+          p {
+            margin-bottom: 0;
+          }
+
+          h1 {
+            font-size: 1.7em;
+          }
+        }
+
+        p,
+        a {
+          font-size: 0.65em;
+        }
+
+        .subtitle {
+          margin: 5px 0 15px;
+          max-width: 250px;
+        }
+
+        .register {
+          padding: 5px 10px;
+        }
+      }
     }
   }
 }

@@ -1,7 +1,9 @@
 import React from 'react';
-import './styles/app.scss';
 import Header from './components/Header';
 
+/**
+ * Top level of App to organize components
+ */
 const App = () => (
   <div className="app">
     <Header />
