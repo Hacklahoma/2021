@@ -47,7 +47,6 @@ $tv-ratio: 0.5457;
         h1 {
           background: linear-gradient(181deg, #f03812 60%, #2c9fa2 200%);
           background-clip: text;
-          font-size: 3em;
           font-style: italic;
           margin-right: -8px;
           padding-right: 8px;
@@ -94,15 +93,6 @@ $tv-ratio: 0.5457;
           p {
             margin-bottom: 3px;
           }
-
-          h1 {
-            font-size: 2.45em;
-          }
-        }
-
-        p,
-        a {
-          font-size: 0.9em;
         }
 
         .subtitle {
@@ -131,15 +121,6 @@ $tv-ratio: 0.5457;
           p {
             margin-bottom: 0;
           }
-
-          h1 {
-            font-size: 1.7em;
-          }
-        }
-
-        p,
-        a {
-          font-size: 0.65em;
         }
 
         .subtitle {

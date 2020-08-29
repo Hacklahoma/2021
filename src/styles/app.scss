@@ -23,6 +23,10 @@ body {
   overflow-x: hidden;
 }
 
+h1 {
+  font-size: 3em;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -33,9 +37,46 @@ code {
   padding: 0;
 }
 
-
 .app {
   background: linear-gradient(#fff8e8, #fff 700px);
   overflow-x: hidden;
   width: 100vw;
+}
+
+@media only screen and (max-width: 840px) {
+  h1 {
+    font-size: 2.45em;
+  }
+  
+  h2 {
+    font-size: 1.2em;
+  }
+
+  p,
+  a {
+    font-size: 0.9em;
+  }
+
+  .box {
+    padding: 40px 30px;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  h1 {
+    font-size: 1.6em;
+  }
+
+  h2 {
+    font-size: 1em;
+  }
+
+  p,
+  a {
+    font-size: 0.8em;
+  }
+
+  .box {
+    padding: 40px 20px;
+  }
 }
