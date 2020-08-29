@@ -1,5 +1,4 @@
-$wires-ratio: 0.3226;
-$tv-ratio: 0.5457;
+@import './constants';
 
 .header {
   height: calc(1550px * #{$wires-ratio});
@@ -41,11 +40,12 @@ $tv-ratio: 0.5457;
         text-align: left;
 
         p {
+          font-weight: 600;
           margin-bottom: 6px;
         }
 
         h1 {
-          background: linear-gradient(181deg, #f03812 60%, #2c9fa2 200%);
+          background: $red-gradient;
           background-clip: text;
           font-style: italic;
           margin-right: -8px;
@@ -60,7 +60,7 @@ $tv-ratio: 0.5457;
       }
       
       .register {
-        background: #2c9fa2;
+        background: $cyan;
         border-radius: 2px;
         color: white;
         font-weight: 800;

@@ -1,2 +1,12 @@
 $content-max-width: 800px;
 $content-width: calc(100vw - 80px);
+$section-vertical-margin: 50px;
+
+$wires-ratio: 0.3226;
+$tv-ratio: 0.5457;
+
+$light: #f8f7f6;
+$cyan: #2c9fa2;
+$red: #f03812;
+
+$red-gradient: linear-gradient(181deg, $red 60%, $cyan 200%);
