@@ -2,6 +2,7 @@
 
 .header {
   height: calc(1550px * #{$wires-ratio});
+  position: relative;
 
   .wires {
     background-image: url('../images/wires.png');
