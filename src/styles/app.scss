@@ -2,6 +2,7 @@
 
 body {
   background: $light;
+  color: $black;
   font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -29,10 +30,20 @@ code {
 }
 
 .app {
+  align-items: center;
   background: linear-gradient(#fff8e8, #fff 700px);
+  display: flex;
+  flex-flow: column;
   overflow-x: hidden;
   width: 100vw;
+
+  .logo {
+    background-image: url('../images/logo.svg');
+    background-position: center;
+    background-size: 175%;
+  }
 }
+
 
 .subtitle {
   font-size: 1.1em;
