@@ -10,6 +10,9 @@
   width: 100vw;
 
   .container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
     max-width: $content-max-width;
     width: $content-width;
 
@@ -39,6 +42,50 @@
 
         span {
           color: $red;
+        }
+      }
+    }
+
+    .right {
+      display: flex;
+
+      ul {
+        font-size: 14px;
+        list-style: none;
+        margin-left: 50px;
+
+        .top {
+          font-style: italic;
+          font-weight: 600;
+          margin-bottom: 10px;
+        }
+
+        button {
+          background: none;
+          border: 0;
+          color: inherit;
+          font: inherit;
+        }
+
+        li {
+          cursor: pointer;
+          margin-top: 2px;
+        }
+      }
+    }
+
+    @media only screen and (max-width: 650px) {
+      flex-flow: column;
+
+      .right {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        max-width: 235px;
+        width: 100%;
+
+        ul {
+          margin-left: 0;
         }
       }
     }
