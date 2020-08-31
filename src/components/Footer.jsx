@@ -29,7 +29,7 @@ const Footer = () => {
         <div className="right">
           <ul>
             <li className="top">Social</li>
-            <a href="mailto:team@hacklahoma.org" target="_blank" rel="noopener noreferrer"><li>Email</li></a>
+            <a href="mailto:team@hacklahoma.org(Hacklahoma Team)" target="_blank" rel="noopener noreferrer"><li>Email</li></a>
             <a href="https://twitter.com/hacklahoma" target="_blank" rel="noopener noreferrer"><li>Twitter</li></a>
             <a href="https://instagram.com/hacklahoma" target="_blank" rel="noopener noreferrer"><li>Instagram</li></a>
             <a href="https://facebook.com/hacklahoma" target="_blank" rel="noopener noreferrer"><li>Facebook</li></a>
