@@ -38,7 +38,8 @@ const Footer = () => {
             <li className="top">Other</li>
             <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank" rel="noopener noreferrer"><li>Code of Conduct</li></a>
             <a href="https://hacklahoma.org" target="_blank" rel="noopener noreferrer"><li>Hacklahoma</li></a>
-            <li tabIndex="0" onKeyPress={handleTopOfPage} onClick={handleTopOfPage}>Top of Page</li>
+            {/* eslint-disable-next-line */}
+            <a><li tabIndex="0" onKeyPress={handleTopOfPage} onClick={handleTopOfPage}>Top of Page</li></a>
           </ul>
         </div>
       </div>
