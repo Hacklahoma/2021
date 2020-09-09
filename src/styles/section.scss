@@ -1,0 +1,35 @@
+@import './constants.scss';
+
+.section {
+  background-image: url('../images/section-wire.png');
+  background-position: center 5px;
+  background-repeat: no-repeat;
+  background-size: 1550px;
+  display: flex;
+  justify-content: center;
+  margin: $section-vertical-margin 0;
+  width: 100vw;
+
+  @media only screen and (max-width: 881px) {
+    background-position: -334px 5px;
+  }
+
+  @media only screen and (max-width: 570px) {
+    background-position: -250px 3px;
+    background-size: 1200px;
+  }
+
+  .container {
+    max-width: $content-max-width;
+    width: $content-width;
+
+    h2 {
+      background: $red-gradient;
+      background-clip: text;
+      font-style: italic;
+      margin-bottom: 20px;
+      margin-right: -8px;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}
