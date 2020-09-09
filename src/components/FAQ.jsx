@@ -8,7 +8,7 @@ import Section from './Section';
 const FAQ = () => (
   <Section>
     <div className="faq">
-      <h2>Have questions about your hackathon experience?</h2>
+      <h2>Have Questions About Your Hackathon Experience?</h2>
     </div>
   </Section>
 );
