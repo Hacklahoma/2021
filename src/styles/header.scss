@@ -72,15 +72,23 @@
       
       .register {
         background: $cyan;
-        border-radius: 2px;
+        border-radius: 4px;
         color: white;
         font-weight: 800;
         padding: 7px 14px;
         text-decoration: none;
         transition: background 150ms;
 
+        p {
+          transition: transform 150ms;
+        }
+
         &:hover {
           background: #21797c;
+
+          p {
+            transform: translate(1.5px, -1px);
+          }
         }
       }
     }

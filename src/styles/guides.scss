@@ -29,6 +29,16 @@
 
         &:hover {
           background: rgba($color: $light, $alpha: 0.8);
+
+          .head,
+          .body {
+            transform: translate(2px, -2px);
+          }
+        }
+
+        .head,
+        .body {
+          transition: transform 150ms;
         }
 
         .body {
@@ -41,6 +51,8 @@
         }
 
         @media only screen and (max-width: 570px) {
+          padding: 12px 8px;
+
           &:nth-child(2) {
             margin: 0 10px;
           }
