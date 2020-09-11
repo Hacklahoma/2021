@@ -33,7 +33,7 @@ const FAQ = () => {
         <div className="right">
           <div className={`item ${items[0] ? 'show' : ''}`}>
             <button onClick={handleClick}><p>Who can attend?</p><ExpandIcon /></button>
-            <AnimateHeight height={`${items[0] ? 'auto' : 0}`}>
+            <AnimateHeight height={`${items[0] ? 'auto' : '0%'}`}>
               <div className="answer">
                 <p>Any student over the age of 18 can participate, regardless of major, background, or skill level.</p>
               </div>
@@ -41,7 +41,7 @@ const FAQ = () => {
           </div>
           <div className={`item ${items[1] ? 'show' : ''}`}>
             <button onClick={handleClick}><p>Does it cost anything?</p><ExpandIcon /></button>
-            <AnimateHeight height={`${items[1] ? 'auto' : 0}`}>
+            <AnimateHeight height={`${items[1] ? 'auto' : '0%'}`}>
               <div className="answer">
                 <p>Admissions is completely free for all students!</p>
               </div>
@@ -49,7 +49,7 @@ const FAQ = () => {
           </div>
           <div className={`item ${items[2] ? 'show' : ''}`}>
             <button onClick={handleClick}><p>Do I need any experience?</p><ExpandIcon /></button>
-            <AnimateHeight height={`${items[2] ? 'auto' : 0}`}>
+            <AnimateHeight height={`${items[2] ? 'auto' : '0%'}`}>
               <div className="answer">
                 <p>No experience is needed. Whether you're a coder, an artist, or a writer, you'll get to work with various mentors, attend workshops, interact with companies, and learn alongside fellow participants.</p>
               </div>
@@ -57,7 +57,7 @@ const FAQ = () => {
           </div>
           <div className={`item ${items[3] ? 'show' : ''}`}>
             <button onClick={handleClick}><p>What's a "hack"?</p><ExpandIcon /></button>
-            <AnimateHeight height={`${items[3] ? 'auto' : 0}`}>
+            <AnimateHeight height={`${items[3] ? 'auto' : '0%'}`}>
               <div className="answer">
                 <p>A hack is something that is jury-rigged inelegantly but effectively, usually as a temporary solution to a problem. Like duct taping a hole in a sinking boat to keep it afloat.</p>
               </div>
@@ -65,7 +65,7 @@ const FAQ = () => {
           </div>
           <div className={`item ${items[4] ? 'show' : ''}`}>
             <button onClick={handleClick}><p>Can we team up?</p><ExpandIcon /></button>
-            <AnimateHeight height={`${items[4] ? 'auto' : 0}`}>
+            <AnimateHeight height={`${items[4] ? 'auto' : '0%'}`}>
               <div className="answer">
                 <p>We encourage everyone to work with a team! Teams may contain up to 4 people. We will also be offering a team-building session at the beginning of the hacking period.</p>
               </div>
@@ -73,7 +73,7 @@ const FAQ = () => {
           </div>
           <div className={`item ${items[5] ? 'show' : ''}`}>
             <button onClick={handleClick}><p>What about COVID-19?</p><ExpandIcon /></button>
-            <AnimateHeight height={`${items[5] ? 'auto' : 0}`}>
+            <AnimateHeight height={`${items[5] ? 'auto' : '0%'}`}>
               <div className="answer">
                 <p> </p>
               </div>
