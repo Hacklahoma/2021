@@ -59,6 +59,10 @@
           font-style: italic;
           font-weight: 600;
           margin-bottom: 8px;
+
+          &:hover {
+            text-decoration: none;
+          }
         }
 
         button {
@@ -66,11 +70,19 @@
           border: 0;
           color: inherit;
           font: inherit;
+
+          &:hover {
+            text-decoration: underline;
+          }
         }
 
         li {
           cursor: pointer;
           margin-top: 2px;
+
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
     }
