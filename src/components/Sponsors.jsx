@@ -7,7 +7,7 @@ import Section from './Section';
  */
 const Sponsors = () => (
   <Section>
-    <div className="sponsors">
+    <div id="sponsors" className="sponsors">
       <h2>Sponsors</h2>
     </div>
   </Section>

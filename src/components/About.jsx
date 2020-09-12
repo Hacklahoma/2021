@@ -5,7 +5,7 @@ import '../styles/about.scss';
  * Contains all the header needs
  */
 const About = () => (
-  <div className="about">
+  <div id="about" className="about">
     <div className="box">
       <h2>Hacklahoma is Oklahoma’s Largest Hackathon</h2>
       {/* eslint-disable-next-line max-len */}

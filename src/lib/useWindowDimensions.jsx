@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
  */
 function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = window;
-  const isMobile = width < 870;
+  const isMobile = width < 570;
   return {
     width,
     height,

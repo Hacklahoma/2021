@@ -25,7 +25,7 @@ const FAQ = () => {
 
   return (
     <Section>
-      <div className="faq">
+      <div id="faq" className="faq">
         <div className="left">
           <h2>Have Questions About Your Hackathon Experience?</h2>
           <p>Contact us anytime:<br /><a href="mailto:team@hacklahoma.org(Hacklahoma Team)">team@hacklahoma.org</a></p>
@@ -56,7 +56,7 @@ const FAQ = () => {
             </AnimateHeight>
           </div>
           <div className={`item ${items[3] ? 'show' : ''}`}>
-            <button onClick={handleClick}><p>What's a "hack"?</p><ExpandIcon /></button>
+            <button onClick={handleClick}><p>What is a "hack"?</p><ExpandIcon /></button>
             <AnimateHeight height={`${items[3] ? 'auto' : '0%'}`}>
               <div className="answer">
                 <p>A hack is something that is jury-rigged inelegantly but effectively, usually as a temporary solution to a problem. Like duct taping a hole in a sinking boat to keep it afloat.</p>

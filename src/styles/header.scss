@@ -2,17 +2,10 @@
 
 .header {
   height: calc(1550px * #{$wires-ratio});
+  margin-top: $navbar-height + $banner-height;
   max-width: 1540px;
   position: relative;
   width: 100vw;
-
-  .logo {
-    height: 60px;
-    margin: 10px;
-    position: absolute;
-    width: 60px;
-    z-index: 1;
-  }
 
   .wires {
     background-image: url('../images/wires.png');
@@ -97,12 +90,6 @@
   @media only screen and (max-width: 840px) {
     height: calc(1080px * #{$wires-ratio});
 
-    .logo {
-      height: 50px;
-      margin: 8px;
-      width: 50px;
-    }
-
     .wires {
       height: calc(1080px * #{$wires-ratio});
       width: 1080px;
@@ -130,12 +117,7 @@
 
   @media only screen and (max-width: 570px) {
     height: calc(730px * #{$wires-ratio});
-
-    .logo {
-      height: 35px;
-      margin: 5px;
-      width: 35px;
-    }
+    margin-top: $navbar-height-mobile + $banner-height;
 
     .wires {
       height: calc(730px * #{$wires-ratio});

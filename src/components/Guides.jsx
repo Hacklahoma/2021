@@ -7,7 +7,7 @@ import Section from './Section';
  */
 const Guides = () => (
   <Section>
-    <div className="guides">
+    <div id="guides" className="guides">
       <h2>New to Hackathons?</h2>
       <div className="container">
         <p className="description">Follow these guides and submit it as your first hack! We'll be there for you if you're having trouble.</p>
