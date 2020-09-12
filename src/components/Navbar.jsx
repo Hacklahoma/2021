@@ -90,7 +90,7 @@ const HamburgerMenu = ({ open, hamburgerMenu, setOpen }) => (
 /**
  * Navigation items
  */
-const NavItems = ({ setOpen, open, hamburger }) => {
+const NavItems = ({ setOpen }) => {
   const [dropdown, setDropdown] = useState();
   const dropdownRef = useRef();
   const resourceRef = useRef();
