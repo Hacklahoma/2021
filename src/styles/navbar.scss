@@ -138,7 +138,7 @@
       }
 
       #hamburger-menu {
-        background: #8b2929;
+        background: $cyan;
         clip: rect(0, $hamburger-menu-width, 100vh, $hamburger-menu-width);
         height: 100vh;
         position: fixed;
