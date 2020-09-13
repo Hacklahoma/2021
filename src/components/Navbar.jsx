@@ -45,15 +45,15 @@ const Navbar = () => {
        * NAVBAR BANNER
        *
        * Note: When adding or removing banner, make sure to set $banner-height to
-       * either 0 or 22px the _constants.
+       * either 0 or 24px the _constants.
        *
        * You can also change the color in _constants.
        */}
-      <a href="/">
+      {/* <a href="/">
         <div className="banner">
           <p>This is an example banner</p>
         </div>
-      </a>
+      </a> */}
       <div className={`navigation ${open ? 'open' : ''}`}>
         <div className="container">
           <a className="logo" href="/">{}</a>

@@ -14,7 +14,7 @@ const Header = () => (
             <h1>HACKLAHOMA 2021</h1>
           </div>
           <p className="subtitle">Attend a 24 hour innovation marathon with the <strong>University of Oklahoma</strong>!</p>
-          <a href="/" className="register"><p>Register</p></a>
+          {/* <a href="/" className="register"><p>Register</p></a> */}
         </div>
       </div>
     </div>
