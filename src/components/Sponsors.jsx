@@ -9,7 +9,7 @@ const Sponsors = () => (
   <Section>
     <div id="sponsors" className="sponsors">
       <h2>Sponsors</h2>
-      <p style={{ color: '#bbb' }}>It's quiet here...</p>
+      <p style={{ color: '#bbb', fontStyle: 'italic' }}>It's quiet here...</p>
     </div>
   </Section>
 );
