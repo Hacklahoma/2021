@@ -14,7 +14,7 @@ const Guides = () => (
         <div className="tracks">
           <div href="#" className="track">
             <p className="head">Build a Website</p>
-            <p className="body">Use popular JavaScript tools to create a full-stack web app.</p>
+            <p className="body">Create a web application using the popular React framework.</p>
           </div>
           <div href="#" className="track">
             <p className="head">Explore Data Science</p>
