@@ -17,8 +17,8 @@ const Guides = () => (
             <p className="body">Use popular JavaScript tools to create a full-stack web app.</p>
           </div>
           <div href="#" className="track">
-            <p className="head">Build a Desktop Application</p>
-            <p className="body">Create a cross-platform desktop app using ElectronJS.</p>
+            <p className="head">Explore Data Science</p>
+            <p className="body">Dive into basic applications of artificial intelligence and data science.</p>
           </div>
           <div href="/" className="track">
             <p className="head">Build Bots</p>
