@@ -75,7 +75,7 @@ const FAQ = () => {
             <button onClick={handleClick}><p>What about COVID-19?</p><ExpandIcon /></button>
             <AnimateHeight height={`${items[5] ? 'auto' : '0%'}`}>
               <div className="answer">
-                <p>Your safety is our top priority, we’re taking all COVID-19 precautions into account, and we will update you with more details about the format of the event very soon.</p>
+                <p>Because your safety is our top priority, we have decided to convert to an online format for Hacklahoma 2021. We hope to bring you the same exciting experience.</p>
               </div>
             </AnimateHeight>
           </div>
