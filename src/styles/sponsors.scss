@@ -1,5 +1,11 @@
 @import './constants';
 
 .sponsors {
-    
+  a {
+    color: $cyan;
+  
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
