@@ -10,7 +10,15 @@ const Sponsors = () => (
     <div id="sponsors" className="sponsors">
       <h2>Sponsors</h2>
       <p>Interested in sponsoring? Check out our <a target="_blank" href="/sponsor_packet.pdf">sponsor packet</a>!</p>
-      <p style={{ color: '#bbb', fontStyle: 'italic', marginTop: '14px' }}>It's quiet here...</p>
+      <div className="container">
+        <a
+          href="https://tailwindapp.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img alt="tailwind" src={require('../images/sponsors/tailwind.png')} />
+        </a>
+      </div>
     </div>
   </Section>
 );

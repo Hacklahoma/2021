@@ -1,11 +1,31 @@
 @import './constants';
 
 .sponsors {
-  a {
-    color: $cyan;
+  p { 
+    a {
+      color: $cyan;
   
-    &:hover {
-      text-decoration: underline;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto auto auto;
+    margin-top: 20px;
+
+    img {
+      max-width: 260px;
+      width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 570px) {
+    .container {
+      grid-template-columns: auto auto;
     }
   }
 }
