@@ -135,6 +135,7 @@ const NavItems = ({ setOpen }) => {
       <button onClick={onClickLink}><li>Guides</li></button>
       <button onClick={onClickLink}><li>FAQ</li></button>
       <button onClick={onClickLink}><li>Sponsors</li></button>
+      <span className="spacer" />
     </ul>
   );
 };

@@ -63,6 +63,12 @@
         height: 100%;
         justify-content: flex-end;
 
+        .spacer {
+          max-width: 70px;
+          min-width: 40px;
+          width: 7vw;
+        }
+
         button {
           background: none;
           border: 0;
@@ -106,7 +112,7 @@
         outline: none;
         padding: 5px;
         position: fixed;
-        right: 50px;
+        right: 100px;
         z-index: 10;
 
         .line {

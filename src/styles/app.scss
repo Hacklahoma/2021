@@ -79,6 +79,21 @@ a {
     background-repeat: no-repeat;
     background-size: 175%;
   }
+
+  #mlh-trust-badge {
+    display: block;
+    max-width: 80px;
+    min-width: 50px;
+    position: fixed;
+    right: 30px;
+    top: 0;
+    width: 10%;
+    z-index: 10000;
+    
+    img {
+      width: 100%;
+    }
+  }
 }
 
 
