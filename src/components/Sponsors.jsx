@@ -18,6 +18,20 @@ const Sponsors = () => (
         >
           <img alt="tailwind" src={require('../images/sponsors/tailwind.png')} />
         </a>
+        <a
+          href="https://www.ou.edu/alumni/saa"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img alt="saa" src={require('../images/sponsors/saa.png')} />
+        </a>
+        <a
+          href="https://www.ou.edu/sga"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img alt="sga" src={require('../images/sponsors/sga.png')} />
+        </a>
       </div>
     </div>
   </Section>
