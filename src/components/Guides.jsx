@@ -10,7 +10,7 @@ const Guides = () => (
     <div id="guides" className="guides">
       <h2>New to Hackathons?</h2>
       <div className="container">
-        <p className="description">Follow these guides and submit it as your first hack! We'll be there for you if you're having trouble.</p>
+        <p className="description">Follow these guides to help you inspire your first hack! We'll be there for you if you're having trouble.</p>
         <div className="tracks">
           <a href="https://github.com/Hacklahoma/guides/tree/react" className="track" target="_blank" rel="noopener noreferrer">
             <p className="head">Build a Website</p>
