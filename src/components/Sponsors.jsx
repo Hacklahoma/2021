@@ -32,6 +32,13 @@ const Sponsors = () => (
         >
           <img alt="sga" src={require('../images/sponsors/sga.png')} />
         </a>
+        <a
+          href="https://www.hobbylobby.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img alt="hobby lobby" src={require('../images/sponsors/hobbyLobby.png')} />
+        </a>
       </div>
     </div>
   </Section>
