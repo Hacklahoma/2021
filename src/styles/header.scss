@@ -54,15 +54,15 @@
           font-weight: 600;
           margin-bottom: 6px;
         }
+      }
 
-        h1 {
-          background: $red-gradient;
-          background-clip: text;
-          font-style: italic;
-          margin-right: -8px;
-          padding-right: 8px;
-          -webkit-text-fill-color: transparent;
-        }
+      h1 {
+        background: $red-gradient;
+        background-clip: text;
+        font-style: italic;
+        margin-right: -8px;
+        padding-right: 8px;
+        -webkit-text-fill-color: transparent;
       }
 
       .subtitle {

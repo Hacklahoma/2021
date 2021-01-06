@@ -1,0 +1,48 @@
+.live {
+  .header {
+    .wires {
+      .tv {
+        .content {
+          column-gap: 50px;
+          flex-flow: row;
+
+          .container {
+            align-items: flex-start;
+
+            h1 {
+              font-size: 2em;
+            }
+
+            .countdown {
+              column-gap: 15px;
+              display: flex;
+              margin: 20px 0 35px;
+
+              .time {
+                width: 40px;
+
+                h2 {
+                  font-size: 2em;
+                }
+
+              }
+
+              .separator {
+                margin-top: 5px;
+              }
+            }
+          }
+          
+          .timer {
+            background-image: url('../images//timer.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 150px;
+            width: 120px;
+          }
+        }
+      }
+    }
+  }
+}
