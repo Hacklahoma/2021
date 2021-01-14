@@ -68,7 +68,10 @@ const Header = () => {
                 </div>
               </div>
             </div>
-            <div className="timer" />
+            <div className="timer-and-pin">
+              <div className="timer" />
+              <div className="pin" />
+            </div>
           </div>
         </div>
       </div>

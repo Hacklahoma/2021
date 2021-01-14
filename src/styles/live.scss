@@ -1,3 +1,5 @@
+@import './constants';
+
 .live {
   .header {
     .wires {
@@ -12,19 +14,19 @@
             align-items: flex-start;
 
             h1 {
-              font-size: 2em;
+              font-size: 2.2em;
             }
 
             .countdown {
               column-gap: 15px;
               display: flex;
-              margin: 20px 0 35px;
+              margin: 20px 0;
 
               .time {
                 width: 40px;
 
                 h2 {
-                  font-size: 2em;
+                  font-size: 2.2em;
                 }
 
               }
@@ -35,16 +37,112 @@
             }
           }
           
-          .timer {
-            background-image: url('../images//timer.png');
+          .timer-and-pin {
+            height: 150px;
+            position: relative;
+            width: 120px;
+          }
+
+          .timer,
+          .pin {
             background-position: center;
             background-repeat: no-repeat;
             background-size: contain;
-            height: 150px;
-            width: 120px;
+            height: 100%;
+            position: absolute;
+            width: 100%;
+          }
+          
+          .timer {
+            background-image: url('../images//timer.png');
+          }
+
+          .pin {
+            $random-num: random(60);
+            animation: rotate 60s infinite steps(60);
+            animation-delay: -$random-num + s;
+            background-image: url('../images//timer_pin.png');
+            transform-origin: 50% 55.5%;
           }
         }
       }
     }
+
+    @media only screen and (max-width: 840px) {
+      .wires {
+        .tv {
+          .content {
+            column-gap: 30px;
+
+            .container {
+              h1 {
+                font-size: 1.7em;
+              }
+
+              .countdown {
+                margin: 20px 0 10px;
+
+                .time {
+                  h2 {
+                    font-size: 1.7em;
+                  }
+
+                  p {
+                    font-size: 0.9em;
+                  }
+                }
+              }
+            }
+
+            .timer-and-pin {
+              height: 130px;
+              width: 100px;
+            }
+          }
+        }
+      }
+    }
+
+    @media only screen and (max-width: 570px) {
+      .wires {
+        .tv {
+          .content {
+            column-gap: 10px;
+
+            .container {
+              h1 {
+                font-size: 1.2em;
+              }
+
+              .countdown {
+                column-gap: 3px;
+                margin: 12px 0 8px;
+
+                .time {
+                  h2 {
+                    font-size: 1.2em;
+                  }
+
+                  p {
+                    font-size: 0.6em;
+                  }
+                }
+              }
+            }
+
+            .timer-and-pin {
+              height: 100px;
+              width: 75px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotateZ(360deg);
   }
 }
