@@ -203,6 +203,15 @@
         }
       }
     }
+
+    @media only screen and (max-width: 570px) {
+      .container {
+        h3 {
+          font-size: 0.825em;
+          margin-top: 15px;
+        }
+      }
+    }
   }
 }
 
