@@ -139,6 +139,29 @@
       }
     }
   }
+
+  .cta {
+    .step {
+      column-gap: 10px;
+      display: flex;
+      margin-bottom: 18px;
+      max-width: 500px;
+      text-align: left;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      h2 {
+        background: unset;
+        background-clip: unset;
+        color: $black;
+        margin: 0;
+        -webkit-text-fill-color: unset;
+  
+      }
+    }
+  }
 }
 
 @keyframes rotate {
