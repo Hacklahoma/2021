@@ -162,10 +162,57 @@
       }
     }
   }
+
+  .schedule {
+    display: block;
+
+    h2 {
+      margin-bottom: 0;
+    }
+
+    .container {
+      column-gap: 30px;
+      display: flex;
+      flex-flow: column;
+      flex-wrap: wrap;
+      padding-left: 0;
+
+      h3 {
+        font-style: italic;
+        margin-bottom: 5px;
+        margin-top: 25px;
+      }
+
+      .item {
+        &.completed {
+          text-decoration: line-through;
+        }
+        
+        &.ongoing {
+          animation: text-pulse 0.5s infinite alternate ease-out;
+          color: $cyan;
+        }
+
+        .text {
+          p {
+            strong {
+              width: 550px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @keyframes rotate {
   100% {
     transform: rotateZ(360deg);
+  }
+}
+
+@keyframes text-pulse {
+  100% {
+    transform: translateX(5px);
   }
 }

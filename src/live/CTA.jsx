@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/about.scss';
 
 /**
- * Contains all the header needs
+ * Contains the call to action box
  */
 const CTA = () => (
   <div id="cta" className="cta about">

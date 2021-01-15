@@ -38,7 +38,8 @@
         }
       }
 
-      button {
+      button,
+      .text {
         align-items: center;
         border-bottom: 2px solid #f2f2f2;
         border-left: 0 solid rgba($color: $cyan, $alpha: 0.2);
@@ -79,12 +80,12 @@
             width: 2px;
           }
         }
+      }
 
-        &:hover {
-          p {
-            text-shadow: -3px 2px 4px rgba(0, 0, 0, 0.15);
-            transform: translate(5px, -3px);
-          }
+      button:hover {
+        p {
+          text-shadow: -3px 2px 4px rgba(0, 0, 0, 0.15);
+          transform: translate(5px, -3px);
         }
       }
     }

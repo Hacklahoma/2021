@@ -3,6 +3,7 @@ import Navbar from './Navbar';
 import '../styles/live.scss';
 import Header from './Header';
 import CTA from './CTA';
+import Schedule from './Schedule';
 
 /**
  * Top level of App to organize components
@@ -12,6 +13,7 @@ const Live = () => (
     <Navbar />
     <Header />
     <CTA />
+    <Schedule />
   </div>
 );
 
