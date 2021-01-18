@@ -28,6 +28,23 @@ const Sponsors = () => (
           />
         </a>
         <a
+          href="http://www.flywheelenergy.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            alt="flywheel energy"
+            src={require("../images/sponsors/flywheelEnergy.png")}
+          />
+        </a>
+        <a
+          href="https://www.paycom.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img alt="paycom" src={require("../images/sponsors/paycom.png")} />
+        </a>
+        <a
           href="https://www.ou.edu/alumni/saa"
           target="_blank"
           rel="noopener noreferrer"
@@ -50,13 +67,6 @@ const Sponsors = () => (
             alt="hobby lobby"
             src={require("../images/sponsors/hobbyLobby.png")}
           />
-        </a>
-        <a
-          href="https://www.paycom.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img alt="paycom" src={require("../images/sponsors/paycom.png")} />
         </a>
       </div>
     </div>
