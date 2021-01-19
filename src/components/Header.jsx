@@ -1,5 +1,5 @@
-import React from "react";
-import "../styles/header.scss";
+import React from 'react';
+import '../styles/header.scss';
 
 /**
  * Contains all the header needs
@@ -26,7 +26,7 @@ const Header = () => (
             <p>Register</p>
           </a>
           <p className="warning">
-            Registration closes January 29th at 11:59 PM
+            Registration closes<br />January 29th at 11:59 PM
           </p>
         </div>
       </div>

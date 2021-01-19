@@ -1,4 +1,4 @@
-@import "./constants";
+@import './constants';
 
 .header {
   height: calc(1550px * #{$wires-ratio});
@@ -8,7 +8,7 @@
   width: 100vw;
 
   .wires {
-    background-image: url("../images/wires.png");
+    background-image: url('../images/wires.png');
     background-position: center;
     background-size: cover;
     height: calc(1550px * #{$wires-ratio});
@@ -20,7 +20,7 @@
   }
 
   .tv {
-    background-image: url("../images/tv.png");
+    background-image: url('../images/tv.png');
     background-position: center;
     background-size: cover;
     display: flex;
@@ -144,7 +144,7 @@
         }
 
         .subtitle {
-          margin: 5px 0 5px;
+          margin: 5px 0;
           max-width: 250px;
         }
 
@@ -153,6 +153,7 @@
         }
 
         .warning {
+          font-size: 0.7em;
           margin-top: 5px;
         }
       }
