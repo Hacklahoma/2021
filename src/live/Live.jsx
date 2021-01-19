@@ -5,6 +5,7 @@ import Header from './Header';
 import CTA from './CTA';
 import Schedule from './Schedule';
 import Sponsors from '../components/Sponsors';
+import LiveStream from './LiveStream';
 
 /**
  * Top level of App to organize components
@@ -14,6 +15,7 @@ const Live = () => (
     <Navbar />
     <Header />
     <CTA />
+    <LiveStream />
     <Schedule />
     <Sponsors />
   </div>
