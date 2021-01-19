@@ -194,11 +194,12 @@ const Schedule = () => {
     <Section>
       <div id="schedule" className="schedule faq">
         <div>
-          <h2>Schedule</h2>
+          <h2>Schedule&nbsp;</h2>
         </div>
         <div className="container right">
           {timeLogic()}
         </div>
+        <p className="note">Schedule is updated in real time</p>
       </div>
     </Section>
   );

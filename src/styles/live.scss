@@ -205,6 +205,13 @@
       }
     }
 
+    .note {
+      color: rgba($black, 0.75);
+      float: right;
+      font-size: 0.8em;
+      margin-top: 20px;
+    }
+
     @media only screen and (max-width: 570px) {
       .container {
         h3 {
