@@ -131,6 +131,25 @@ const Schedule = () => {
   };
 
   /**
+   * Get user's timezone name (ex: CST)
+   */
+  function getTimezoneName() {
+    const today = new Date();
+    const short = today.toLocaleDateString(undefined);
+    const full = today.toLocaleDateString(undefined, { timeZoneName: 'short' });
+
+    // Trying to remove date from the string in a locale-agnostic way
+    const shortIndex = full.indexOf(short);
+    if (shortIndex >= 0) {
+      const trimmed = full.substring(0, shortIndex) + full.substring(shortIndex + short.length);
+
+      return trimmed.replace(/^[\s,.\-:;]+|[\s,.\-:;]+$/g, '');
+    }
+
+    return full;
+  }
+
+  /**
    * Decides what component to output based on time
    */
   const timeLogic = () => {
@@ -199,7 +218,7 @@ const Schedule = () => {
         <div className="container right">
           {timeLogic()}
         </div>
-        <p className="note">Schedule is updated in real time</p>
+        <p className="note">Schedule is updated in real time in your local time zone ({getTimezoneName()})</p>
       </div>
     </Section>
   );
