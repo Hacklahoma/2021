@@ -149,6 +149,14 @@
       max-width: 500px;
       text-align: left;
 
+      a {
+        color: $cyan;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
       &:last-child {
         margin-bottom: 0;
       }
