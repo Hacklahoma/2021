@@ -56,10 +56,10 @@ const Header = () => {
     }
 
     updateCountdown();
+  // eslint-disable-next-line
   }, [tick]);
 
   useEffect(() => {
-    updateCountdown();
     regenerateTick();
 
     setInterval(() => {

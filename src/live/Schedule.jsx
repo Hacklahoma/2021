@@ -179,13 +179,13 @@ const Schedule = () => {
 
       // Push new day header if needed
       if (day) {
-        results.push(<h3>{day}, {months[val.time.getMonth()]} {val.time.getDate()}</h3>);
+        results.push(<h3 key={`${val.name}-header`}>{day}, {months[val.time.getMonth()]} {val.time.getDate()}</h3>);
       }
 
       // Push schedule item that has no description
       if (!val.description) {
         results.push(
-          <div className={classes}>
+          <div key={`${val.name}-container`} className={classes}>
             <div className="text"><p><strong>{formatTime(val.time)} </strong>{val.name}</p></div>
           </div>,
         );
