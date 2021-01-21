@@ -65,6 +65,13 @@ a {
   padding: 0;
 }
 
+.gradient-text {
+  background: $red-gradient;
+  background-clip: text;
+  font-style: italic;
+  -webkit-text-fill-color: transparent;
+}
+
 .app,
 .live {
   align-items: center;

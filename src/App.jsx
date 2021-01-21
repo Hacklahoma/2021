@@ -12,6 +12,7 @@ import FAQ from './components/FAQ';
 import Sponsors from './components/Sponsors';
 import Navbar from './components/Navbar';
 import Live from './live/Live';
+import Stream from './stream/Stream';
 
 /**
  * Top level of App to organize components
@@ -19,6 +20,9 @@ import Live from './live/Live';
 const App = () => (
   <Router>
     <Switch>
+      <Route path="/stream">
+        <Stream />
+      </Route>
       <Route path="/live">
         <Live />
       </Route>

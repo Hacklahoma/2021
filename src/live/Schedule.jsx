@@ -6,7 +6,7 @@ import Section from '../components/Section';
 const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
-const times = [
+export const times = [
   {
     name:     'Opening Ceremony',
     time:     new Date('2021-02-06T17:00:00Z'),

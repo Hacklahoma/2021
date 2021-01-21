@@ -1,0 +1,89 @@
+@import './constants';
+
+.stream {
+  display: flex;
+  height: 100vh;
+
+  .info {
+    padding: 50px;
+    width: 250px;
+
+    .gradient-text {
+      margin-bottom: 10px;
+    }
+
+    .countdown {
+      margin-bottom: 80px;
+
+      .timer {
+        column-gap: 20px;
+        display: flex;
+        margin-left: 5px;
+
+        .time {
+          width: 40px;
+
+          h2 {
+            font-size: 2.2em;
+          }
+
+        }
+
+        .separator {
+          margin-top: 5px;
+        }
+      }
+    }
+
+    .next-event {
+      .time {
+        font-size: 1.2em;
+        font-weight: bold;
+      }
+
+      .name {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .schedule {
+    background: $cyan;
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.25);
+    color: white;
+    padding: 50px;
+    width: calc(100% - 450px);
+    
+    .note {
+      bottom: 40px;
+      font-size: 0.9em;
+      margin-top: 10px;
+      opacity: 0.75;
+      position: absolute;
+      right: 50px;
+    }
+    
+    .times {
+      display: flex;
+      justify-content: space-between;
+
+      h2 {
+        margin-bottom: 12px;
+      }
+    
+      .day {
+        margin-bottom: 10px;
+
+        .item {
+          font-size: 1.25em;
+          margin: 5px 0;
+
+          &.completed {
+            text-decoration: line-through;
+          }
+        }
+      }
+    }
+  }
+}

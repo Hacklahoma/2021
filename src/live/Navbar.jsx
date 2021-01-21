@@ -59,10 +59,10 @@ const Navbar = () => {
           <div className="logo-and-bug">
             <a className="logo" href="/">{}</a>
           </div>
-          {/* {isMobile
+          {isMobile
             ? <Hamburger hamburger={hamburger} open={open} setOpen={setOpen} />
             : <NavItems setOpen={setOpen} />}
-          <HamburgerMenu hamburgerMenu={hamburgerMenu} setOpen={setOpen} open={open} /> */}
+          <HamburgerMenu hamburgerMenu={hamburgerMenu} setOpen={setOpen} open={open} />
         </div>
       </div>
     </div>
@@ -125,17 +125,20 @@ const NavItems = ({ setOpen }) => {
     setDropdown(false);
     const targetName = e.currentTarget.children[0].innerHTML.toLowerCase();
 
+    let name = targetName;
+    if (targetName === 'home') {
+      name = 'root';
+    }
     window.scrollTo({
       behavior: 'smooth',
-      top:      document.getElementById(targetName).offsetTop - 125,
+      top:      document.getElementById(name).offsetTop - 125,
     });
   };
 
   return (
     <ul id="nav-items">
-      <button onClick={onClickLink}><li>About</li></button>
-      <button onClick={onClickLink}><li>Guides</li></button>
-      <button onClick={onClickLink}><li>FAQ</li></button>
+      <button onClick={onClickLink}><li>Home</li></button>
+      <button onClick={onClickLink}><li>Schedule</li></button>
       <button onClick={onClickLink}><li>Sponsors</li></button>
       <span className="spacer" />
     </ul>
