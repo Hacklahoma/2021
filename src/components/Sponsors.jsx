@@ -58,6 +58,16 @@ const Sponsors = () => (
           </div>
           <div className="tier tier3">
             <a
+              href="https://www.clevyr.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                alt="clevyr"
+                src={require('../images/sponsors/clevyr.png')}
+              />
+            </a>
+            <a
               href="https://www.hobbylobby.com"
               target="_blank"
               rel="noopener noreferrer"

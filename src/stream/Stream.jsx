@@ -2,6 +2,33 @@ import React, { useEffect, useState } from 'react';
 import { times } from '../live/Schedule';
 import '../styles/stream.scss';
 
+const sponsors = [
+  {
+    image:    'tailwind.png',
+    duration: 25,
+  },
+  {
+    image:    'paycom.png',
+    duration: 10,
+  },
+  {
+    image:    'flywheelEnergy.png',
+    duration: 10,
+  },
+  {
+    image:    'clevyr.png',
+    duration: 5,
+  },
+  {
+    image:    'saa.png',
+    duration: 5,
+  },
+  {
+    image:    'sga.png',
+    duration: 5,
+  },
+];
+
 /**
  * Contains the call to action box
  */
@@ -11,8 +38,10 @@ const Stream = () => {
   // 24hrs after start date
   const endDate = new Date(startDate.getTime() + 24 * 60 * 60 * 1000);
 
+  const [tick, setTick] = useState(new Date());
   const [countdown, setCountdown] = useState({ hours: -1, mins: -1, secs: -1 });
   const [nextEvent, setNextEvent] = useState(times[0]);
+  const [sponsor, setSponsor] = useState(sponsors[0]);
 
   /**
    * Updates countdown
@@ -30,17 +59,44 @@ const Stream = () => {
     }
   };
 
+  /**
+   * Updates the sponsor on screen
+   */
+  const updateSponsor = () => {
+    const now = new Date();
+    const timeInSecs = Math.floor(now.getTime() / 1000);
+    const duration = sponsor.duration;
+    let i = sponsors.indexOf(sponsor) + 1;
+    if (timeInSecs % duration === 0) {
+      if (sponsors.length - 1 < i) {
+        i = 0;
+      }
+      setSponsor(sponsors[i]);
+    }
+  };
+
+  /**
+   * Updates next event
+   */
+  const updateNextEvent = () => {
+    const now = new Date();
+    times.forEach((val) => {
+      if (val.time < now) {
+        setNextEvent(val);
+      }
+    });
+  };
+
   useEffect(() => {
     updateCountdown();
+    updateSponsor();
+    updateNextEvent();
+    // eslint-disable-next-line
+  }, [tick]);
 
+  useEffect(() => {
     setInterval(() => {
-      updateCountdown();
-      times.forEach((val) => {
-        const now = new Date();
-        if (val.time < now) {
-          setNextEvent(val);
-        }
-      });
+      setTick(new Date());
     }, 1000);
     // eslint-disable-next-line
   }, []);
@@ -128,6 +184,13 @@ const Stream = () => {
           <p className="time">{formatTime(nextEvent.time)}</p>
           <p className="name">{nextEvent.name}</p>
           <p className="description">{nextEvent.description}</p>
+        </div>
+        <div className="sponsor">
+          <h2 className="gradient-text">SPONSORED BY</h2>
+          <div className="image">
+            {/* eslint-disable-next-line import/no-dynamic-require */}
+            <img src={`${require(`../images/sponsors/${sponsor.image}`)}`} alt={sponsor.image} />
+          </div>
         </div>
       </div>
       <div className="schedule">

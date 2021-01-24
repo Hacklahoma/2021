@@ -45,6 +45,22 @@
         font-size: 1.25em;
         margin-bottom: 10px;
       }
+
+      .description {
+        height: 150px;
+      }
+    }
+
+    .sponsor {
+      .image {
+        align-items: center;
+        display: flex;
+        height: 120px;
+
+        img {
+          width: 220px;
+        }
+      }
     }
   }
 
