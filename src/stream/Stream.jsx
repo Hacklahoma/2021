@@ -148,7 +148,10 @@ const Stream = () => {
 
         results.push(
           <div key={`${val.name}-container`} className={classes}>
-            <div className="text"><p><strong>{formatTime(val.time)} </strong>{val.name}</p></div>
+            <div className="text">
+              <p className="time"><strong>{formatTime(val.time)} </strong></p>
+              <p>{val.name}</p>
+            </div>
           </div>,
         );
       }
