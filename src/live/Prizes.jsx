@@ -22,7 +22,7 @@ const Prizes = () => (
             <h1 className="center">First Place</h1>
             <p>
               This prize will be given to the team or individual who places
-              first, overall. Each team member will receive an <b>IPad</b>.
+              first, overall. Each team member will receive an <b>iPad</b>.
               <br />
               <br />
             </p>

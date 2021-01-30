@@ -186,7 +186,6 @@ const Stream = () => {
           <h2 className="gradient-text">NEXT EVENT</h2>
           <p className="time">{formatTime(nextEvent.time)}</p>
           <p className="name">{nextEvent.name}</p>
-          <p className="description">{nextEvent.description}</p>
         </div>
         <div className="sponsor">
           <h2 className="gradient-text">SPONSORED BY</h2>

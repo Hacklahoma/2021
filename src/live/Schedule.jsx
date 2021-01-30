@@ -57,7 +57,7 @@ export const times = [
   },
   {
     name:
-      'How to Build a Cloud Connected AR/VR App in 15 Minutes or Less from echoAR',
+      'Build a Cloud Connected AR/VR App in 15 Minutes or Less from echoAR',
     description:
       'The workshop will show how to quickly create AR/VR apps with no technical skills or coding required and scale existing apps by connecting them to the cloud. Workshop participants will learn how to create real-time cloud-connected augmented and virtual reality (AR/VR) apps using the echoAR platform. Participants are encouraged to bring a laptop and a smartphone, or just follow along the live demonstration. Platforms for experimentation include: Google ARCore, WebXR, Vuforia, Unity-based apps, and more.',
     time:     new Date('2021-02-06T20:30:00Z'),
@@ -101,7 +101,7 @@ export const times = [
   {
     name:        'Cooking Show',
     description:
-      'Think about how hungry you’ll be at midnight after hours of hacking...we have just the solution for you! Come join our Hacklahoma organizing team in trying to make some of our favorite recipes. Follow along in our cooking show and enjoy your tasty snack afterwards!',
+      'Think about how hungry you\'ll be at midnight after hours of hacking...we have just the solution for you! Come join our Hacklahoma organizing team in trying to make some of our favorite recipes. Follow along in our cooking show and enjoy your tasty snack afterwards!',
     time:     new Date('2021-02-07T06:00:00Z'),
     duration: 60,
   },
@@ -132,10 +132,12 @@ const Schedule = () => {
    * Expands Schedule item
    */
   const handleClick = (e) => {
-    const child = e.currentTarget.parentNode;
-    const parent = child.parentNode;
-    const index = Array.prototype.indexOf.call(parent.children, child);
-    // Making copy of object
+    // Get index of time that was clicked
+    const name = e.currentTarget.parentNode.getAttribute('name');
+    const timeObj = times.find((val) => val.name === name);
+    const index = times.indexOf(timeObj);
+
+    // Making copy of items object
     const obj = JSON.parse(JSON.stringify(items));
     obj[index] = !items[index];
     setItems(obj);
@@ -237,7 +239,8 @@ const Schedule = () => {
         results.push(
           <div
             key={val.name}
-            className={`${classes}${items[i + 1] ? ' show' : ''}`}
+            className={`${classes}${items[i] ? ' show' : ''}`}
+            name={val.name}
           >
             <button onClick={handleClick}>
               <p>
@@ -246,7 +249,7 @@ const Schedule = () => {
               </p>
               <ExpandIcon />
             </button>
-            <AnimateHeight height={`${items[i + 1] ? 'auto' : '0%'}`}>
+            <AnimateHeight height={`${items[i] ? 'auto' : '0%'}`}>
               <div className="answer">
                 <p>{val.description}</p>
               </div>
