@@ -176,10 +176,11 @@ const Prizes = () => (
           <div className="prize-item-content">
             <h3 className="center">Best Hardware Hack</h3>
             <p>
-              Using your preferred hardware or hardware emulator, build a hack
-              for your chance to win a Grove Beginner Kit, with Arduino Uno R3
-              included. We select two winning teams for this category. Each
-              winning team member will receive a prize!
+              Using your preferred hardware or hardware emulator, build a
+              hack for your chance to win a
+              <b> Grove Beginner Kit, with Arduino Uno R3 included</b>.
+              We select two winning teams for this category. Each winning
+              team member will receive a prize!
             </p>
           </div>
         </div>
