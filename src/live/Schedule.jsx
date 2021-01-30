@@ -229,7 +229,7 @@ const Schedule = () => {
             <div className="text">
               <p>
                 <strong>{formatTime(val.time)} </strong>
-                {val.name}
+                <span>{val.name}</span>
               </p>
             </div>
           </div>,
@@ -245,7 +245,7 @@ const Schedule = () => {
             <button onClick={handleClick}>
               <p>
                 <strong>{formatTime(val.time)} </strong>
-                {val.name}
+                <span>{val.name}</span>
               </p>
               <ExpandIcon />
             </button>

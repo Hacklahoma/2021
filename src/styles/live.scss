@@ -227,10 +227,25 @@
           color: $cyan;
         }
 
-        .text {
+        .text,
+        button {
+          max-width: 100%;
+          
           p {
+            display: flex;
+            white-space: normal;
+            word-wrap: break-all;
+            
+            span {
+              display: block;
+              text-align: left; 
+            }
+
             strong {
-              width: 550px;
+              display: block;
+              margin-right: 7px;
+              min-width: fit-content;
+              text-align: left;
             }
           }
         }
