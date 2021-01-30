@@ -66,7 +66,6 @@ const Stream = () => {
   const updateSponsor = () => {
     const duration = sponsor.duration;
     let i = sponsors.indexOf(sponsor) + 1;
-    console.log(counter);
     if (counter >= duration) {
       if (sponsors.length - 1 < i) {
         i = 0;
