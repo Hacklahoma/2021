@@ -1,6 +1,6 @@
+import React from 'react';
 import Section from '../components/Section';
 import '../styles/prizes.scss';
-import React from 'react';
 
 /**
  * List of prizes and challenges
@@ -19,7 +19,7 @@ const Prizes = () => (
             />
           </div>
           <div className="prize-item-content">
-            <h1 className="center">First Place</h1>
+            <h3 className="center">First Place</h3>
             <p>
               This prize will be given to the team or individual who places
               first, overall. Each team member will receive an <b>iPad</b>.
@@ -38,7 +38,7 @@ const Prizes = () => (
             />
           </div>
           <div className="prize-item-content">
-            <h1 className="center">Second Place</h1>
+            <h3 className="center">Second Place</h3>
             <p>
               This prize will be given to the team or individual who places
               second, overall. Each team member of the winning team will
@@ -56,7 +56,7 @@ const Prizes = () => (
             />
           </div>
           <div className="prize-item-content">
-            <h1 className="center">Third Place</h1>
+            <h3 className="center">Third Place</h3>
             <p>
               This prize will be given to the team or individual who places
               third, overall. Each team member of the winning team will
@@ -76,7 +76,7 @@ const Prizes = () => (
             />
           </div>
           <div className="prize-item-content">
-            <h1 className="center">Best Beginner</h1>
+            <h3 className="center">Best Beginner</h3>
             <p>
               This category rewards the best beginner hack. To be considered
               for this prize, the hack must be created by first time hackers.
@@ -92,11 +92,10 @@ const Prizes = () => (
               alt="Best Design"
               src={require('../images/prizes/best_design.png')}
               className="prize-item-img"
-              style={{ maxWidth: '250px' }}
             />
           </div>
           <div className="prize-item-content">
-            <h1 className="center">Best Design</h1>
+            <h3 className="center">Best Design</h3>
             <p>
               This category rewards the best overall designed hack. Each team
               member of the winning team will receive a{' '}
@@ -114,7 +113,7 @@ const Prizes = () => (
             />
           </div>
           <div className="prize-item-content">
-            <h1 className="center">Best Theme</h1>
+            <h3 className="center">Best Theme</h3>
             <p>
               This category rewards the best theme for a hack. Each team
               member of the winning team will receive a{' '}
@@ -130,11 +129,10 @@ const Prizes = () => (
               alt="Best Domain"
               src={require('../images/prizes/domain.png')}
               className="prize-item-img"
-              style={{ maxWidth: '150px' }}
             />
           </div>
           <div className="prize-item-content">
-            <h1 className="center">Best Domain</h1>
+            <h3 className="center">Best Domain</h3>
             <p>
               Register a .tech, .space, or .online domain name using
               Domain.com during the weekend. Each team may submit one entry
@@ -156,7 +154,7 @@ const Prizes = () => (
             />
           </div>
           <div className="prize-item-content">
-            <h1 className="center">Best Google Cloud</h1>
+            <h3 className="center">Best Google Cloud</h3>
             <p>
               Build your hackathon project with a suite of secure storage,
               powerful compute, and integrated data analytics products
@@ -173,11 +171,10 @@ const Prizes = () => (
               alt="Best Theme"
               src={require('../images/prizes/digikey.png')}
               className="prize-item-img"
-              style={{ maxWidth: '150px' }}
             />
           </div>
           <div className="prize-item-content">
-            <h1 className="center">Best Hardware Hack</h1>
+            <h3 className="center">Best Hardware Hack</h3>
             <p>
               Using your preferred hardware or hardware emulator, build a hack
               for your chance to win a Grove Beginner Kit, with Arduino Uno R3
@@ -186,11 +183,8 @@ const Prizes = () => (
             </p>
           </div>
         </div>
-
-        <h2 className="center">
-          <br /> *Prizes limited to residents of the United States only*
-        </h2>
       </div>
+      <p className="note">Prizes limited to residents of the United States only</p>
     </div>
   </Section>
 );
