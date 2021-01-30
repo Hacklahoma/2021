@@ -126,7 +126,6 @@ const NavItems = ({ setOpen }) => {
     const targetName = e.currentTarget.children[0].innerHTML.toLowerCase();
 
     let name = targetName;
-    console.log(name);
     if (targetName === 'home') {
       name = 'root';
     }
