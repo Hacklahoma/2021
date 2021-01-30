@@ -6,28 +6,30 @@
   margin: 0;
 
   .prize-item {
-    width: 380px;
     display: inline-block;
     margin: 10px;
+    width: 380px;
 
     .prize-item-imgcon {
       text-align: center;
+
       .prize-item-img {
+        display: inline-block;
         max-width: 175px;
         text-align: center;
-        display: inline-block;
       }
     }
 
     .prize-item-content {
+      box-shadow: 1px 1px 1px 1px rgba(29, 29, 29, 0.2);
+
+      display: inline-block;
+      padding: 0 7px 7px;
+
       h1 {
         font-size: 2em;
         margin: 3px;
       }
-
-      display: inline-block;
-      padding: 0px 7px 7px 7px;
-      box-shadow: 1px 1px 1px 1px rgba(29, 29, 29, 0.2);
     }
   }
 }

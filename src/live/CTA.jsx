@@ -1,5 +1,5 @@
-import React from "react";
-import "../styles/about.scss";
+import React from 'react';
+import '../styles/about.scss';
 
 /**
  * Contains the call to action box
@@ -12,38 +12,38 @@ const CTA = () => (
       <div className="step">
         <h2>1. </h2>
         <p className="instruct">
-          Join our{" "}
+          Join our{' '}
           <a
             href="https://discord.gg/b8xMFuPcfe"
             target="_blank"
             rel="noopener noreferrer"
           >
             Discord Server
-          </a>{" "}
+          </a>{' '}
           and follow instructions to link your application to check in.
         </p>
       </div>
       <div className="step">
         <h2>2. </h2>
         <p className="instruct">
-          Register to our{" "}
+          Register to our{' '}
           <a
             href="https://hacklahoma21.devpost.com"
             target="_blank"
             rel="noopener noreferrer"
           >
             Devpost
-          </a>{" "}
+          </a>{' '}
           so that you can submit your project and be judged.
         </p>
       </div>
       <div className="step">
         <h2>3. </h2>
         <p className="instruct">
-          Read the{" "}
+          Read the{' '}
           <a href="/" target="_blank" rel="noopener noreferrer">
             Hacker Handbook
-          </a>{" "}
+          </a>{' '}
           to guide you through Hacklahoma 2021!
         </p>
       </div>
