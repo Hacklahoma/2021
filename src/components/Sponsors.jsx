@@ -1,6 +1,6 @@
-import React from 'react';
-import '../styles/sponsors.scss';
-import Section from './Section';
+import React from "react";
+import "../styles/sponsors.scss";
+import Section from "./Section";
 
 /**
  * Contains all the header needs
@@ -10,13 +10,6 @@ const Sponsors = () => (
     <Section>
       <div id="sponsors" className="sponsors">
         <h2>Sponsors</h2>
-        <p>
-          Interested in sponsoring? Check out our{' '}
-          <a target="_blank" href="/sponsor_packet.pdf">
-            sponsor packet
-          </a>
-          !
-        </p>
         <div className="container">
           <div className="tier tier1">
             <a
@@ -26,7 +19,7 @@ const Sponsors = () => (
             >
               <img
                 alt="tailwind"
-                src={require('../images/sponsors/tailwind.png')}
+                src={require("../images/sponsors/tailwind.png")}
               />
             </a>
           </div>
@@ -36,7 +29,10 @@ const Sponsors = () => (
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img alt="paycom" src={require('../images/sponsors/paycom.png')} />
+              <img
+                alt="paycom"
+                src={require("../images/sponsors/paycom.png")}
+              />
             </a>
             <a
               href="http://www.flywheelenergy.com/"
@@ -45,7 +41,7 @@ const Sponsors = () => (
             >
               <img
                 alt="flywheel energy"
-                src={require('../images/sponsors/flywheelEnergy.png')}
+                src={require("../images/sponsors/flywheelEnergy.png")}
               />
             </a>
             <a
@@ -53,7 +49,7 @@ const Sponsors = () => (
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img alt="saa" src={require('../images/sponsors/saa.png')} />
+              <img alt="saa" src={require("../images/sponsors/saa.png")} />
             </a>
           </div>
           <div className="tier tier3">
@@ -64,7 +60,7 @@ const Sponsors = () => (
             >
               <img
                 alt="clevyr"
-                src={require('../images/sponsors/clevyr.png')}
+                src={require("../images/sponsors/clevyr.png")}
               />
             </a>
             <a
@@ -74,7 +70,7 @@ const Sponsors = () => (
             >
               <img
                 alt="hobby lobby"
-                src={require('../images/sponsors/hobbyLobby.png')}
+                src={require("../images/sponsors/hobbyLobby.png")}
               />
             </a>
             <a
@@ -82,7 +78,7 @@ const Sponsors = () => (
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img alt="sga" src={require('../images/sponsors/sga.png')} />
+              <img alt="sga" src={require("../images/sponsors/sga.png")} />
             </a>
           </div>
         </div>
@@ -100,15 +96,11 @@ const Sponsors = () => (
             >
               <img
                 alt="stickermule"
-                src={require('../images/sponsors/stickerMule.png')}
+                src={require("../images/sponsors/stickerMule.png")}
               />
             </a>
-            <a
-              href="https://mlh.io"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img alt="mlh" src={require('../images/sponsors/mlh.png')} />
+            <a href="https://mlh.io" target="_blank" rel="noopener noreferrer">
+              <img alt="mlh" src={require("../images/sponsors/mlh.png")} />
             </a>
           </div>
         </div>
