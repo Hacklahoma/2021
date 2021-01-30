@@ -5,15 +5,15 @@ import '../styles/stream.scss';
 const sponsors = [
   {
     image:    'tailwind.png',
-    duration: 25,
+    duration: 8,
   },
   {
     image:    'paycom.png',
-    duration: 10,
+    duration: 8,
   },
   {
     image:    'flywheelEnergy.png',
-    duration: 10,
+    duration: 8,
   },
   {
     image:    'clevyr.png',
@@ -42,6 +42,7 @@ const Stream = () => {
   const [countdown, setCountdown] = useState({ hours: -1, mins: -1, secs: -1 });
   const [nextEvent, setNextEvent] = useState(times[0]);
   const [sponsor, setSponsor] = useState(sponsors[0]);
+  const [counter, setCounter] = useState(0);
 
   /**
    * Updates countdown
@@ -63,15 +64,17 @@ const Stream = () => {
    * Updates the sponsor on screen
    */
   const updateSponsor = () => {
-    const now = new Date();
-    const timeInSecs = Math.floor(now.getTime() / 1000);
     const duration = sponsor.duration;
     let i = sponsors.indexOf(sponsor) + 1;
-    if (timeInSecs % duration === 0) {
+    console.log(counter);
+    if (counter >= duration) {
       if (sponsors.length - 1 < i) {
         i = 0;
       }
       setSponsor(sponsors[i]);
+      setCounter(0);
+    } else {
+      setCounter(counter + 1);
     }
   };
 
