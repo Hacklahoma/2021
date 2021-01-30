@@ -11,16 +11,18 @@ const CTA = () => (
       {/* eslint-disable-next-line max-len */}
       <div className="step">
         <h2>1. </h2>
-        <p className="instruct">
-          Join our{' '}
-          <a
-            href="https://discord.gg/EA8RkeYtDT"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Discord Server
-          </a>{' '}
-          and follow instructions to link your application to check in.
+        <p className="instruct discord">
+          <span>
+            Join our{' '}
+            <a
+              href="/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Discord Server
+            </a>{' '}
+            and follow the instructions to check in.
+          </span> Will be announced soon...
         </p>
       </div>
       <div className="step">
