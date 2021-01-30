@@ -18,16 +18,11 @@ const Header = () => (
             the <strong>University of Oklahoma</strong>!
           </p>
           <a
-            href="https://register.hacklahoma.org"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/live"
             className="register"
           >
-            <p>Register</p>
+            <p>LIVE!</p>
           </a>
-          <p className="warning">
-            Registration closes<br />January 29th at 11:59 PM
-          </p>
         </div>
       </div>
     </div>

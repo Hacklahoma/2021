@@ -15,9 +15,9 @@ const CTA = () => (
           <span>
             Join our{' '}
             <a
-              href="/"
-              target="_blank"
-              rel="noopener noreferrer"
+              // href="/"
+              // target="_blank"
+              // rel="noopener noreferrer"
             >
               Discord Server
             </a>{' '}
