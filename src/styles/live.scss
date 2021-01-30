@@ -1,6 +1,16 @@
 @import './constants';
 
 .live {
+  .navbar {
+    .navigation {
+      .container {
+        #hamburger {
+          right: 50px;
+        }
+      }
+    }
+  }
+
   .header {
     .wires {
       background-image: url('../images/wires_live.png');

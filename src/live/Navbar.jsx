@@ -126,6 +126,7 @@ const NavItems = ({ setOpen }) => {
     const targetName = e.currentTarget.children[0].innerHTML.toLowerCase();
 
     let name = targetName;
+    console.log(name);
     if (targetName === 'home') {
       name = 'root';
     }
@@ -139,8 +140,8 @@ const NavItems = ({ setOpen }) => {
     <ul id="nav-items">
       <button onClick={onClickLink}><li>Home</li></button>
       <button onClick={onClickLink}><li>Schedule</li></button>
+      <button onClick={onClickLink}><li>Prizes</li></button>
       <button onClick={onClickLink}><li>Sponsors</li></button>
-      <span className="spacer" />
     </ul>
   );
 };
