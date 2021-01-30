@@ -10,13 +10,6 @@ const Sponsors = () => (
     <Section>
       <div id="sponsors" className="sponsors">
         <h2>Sponsors</h2>
-        <p>
-          Interested in sponsoring? Check out our{' '}
-          <a target="_blank" href="/sponsor_packet.pdf">
-            sponsor packet
-          </a>
-          !
-        </p>
         <div className="container">
           <div className="tier tier1">
             <a
@@ -36,7 +29,10 @@ const Sponsors = () => (
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img alt="paycom" src={require('../images/sponsors/paycom.png')} />
+              <img
+                alt="paycom"
+                src={require('../images/sponsors/paycom.png')}
+              />
             </a>
             <a
               href="http://www.flywheelenergy.com/"
@@ -103,11 +99,7 @@ const Sponsors = () => (
                 src={require('../images/sponsors/stickerMule.png')}
               />
             </a>
-            <a
-              href="https://mlh.io"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="https://mlh.io" target="_blank" rel="noopener noreferrer">
               <img alt="mlh" src={require('../images/sponsors/mlh.png')} />
             </a>
           </div>
