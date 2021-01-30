@@ -14,7 +14,7 @@ const CTA = () => (
         <p className="instruct">
           Join our{' '}
           <a
-            href="https://discord.gg/b8xMFuPcfe"
+            href="https://discord.gg/EA8RkeYtDT"
             target="_blank"
             rel="noopener noreferrer"
           >
