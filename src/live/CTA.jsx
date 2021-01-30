@@ -41,7 +41,7 @@ const CTA = () => (
         <h2>3. </h2>
         <p className="instruct">
           Read the{' '}
-          <a href="/" target="_blank" rel="noopener noreferrer">
+          <a href="/hacker_handbook.pdf" target="_blank" rel="noopener noreferrer">
             Hacker Handbook
           </a>{' '}
           to guide you through Hacklahoma 2021!
