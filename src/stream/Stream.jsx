@@ -84,9 +84,9 @@ const Stream = () => {
    */
   const updateNextEvent = () => {
     const now = new Date();
-    times.forEach((val) => {
+    times.forEach((val, i) => {
       if (val.time < now) {
-        setNextEvent(val);
+        setNextEvent(times[i + 1]);
       }
     });
   };
@@ -188,8 +188,8 @@ const Stream = () => {
         </div>
         <div className="next-event">
           <h2 className="gradient-text">NEXT EVENT</h2>
-          <p className="time">{formatTime(nextEvent.time)}</p>
-          <p className="name">{nextEvent.name}</p>
+          <p className="time">{nextEvent ? formatTime(nextEvent.time) : 'N/A'}</p>
+          <p className="name">{nextEvent ? nextEvent.name : ''}</p>
         </div>
         <div className="sponsor">
           <h2 className="gradient-text">SPONSORED BY</h2>
