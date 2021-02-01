@@ -90,6 +90,16 @@ const Sponsors = () => (
         <div className="container">
           <div className="tier tier2">
             <a
+              href="https://www.echoar.xyz/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                alt="echoAR"
+                src={require('../images/sponsors/echoAR.png')}
+              />
+            </a>
+            <a
               href="https://www.stickermule.com/unlock?ref_id=0539570701&utm_source=sponsorship&utm_campaign=mlh-sponsorship-2019&utm_medium=referral"
               target="_blank"
               rel="noopener noreferrer"
