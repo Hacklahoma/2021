@@ -71,7 +71,7 @@ export const times = [
     duration: 60,
   },
   {
-    name:        'Design Thinking Workshop with Reagan Shirk by Hacklahoma',
+    name:        'Design Thinking Workshop with Mike Hollinger',
     description:
       'The goal of design thinking is to keep the customer at the forefront of every product. Come learn about design thinking and see why major companies are switching to this mindset when pushing new products and projects.',
     time:     new Date('2021-02-06T23:00:00Z'),
