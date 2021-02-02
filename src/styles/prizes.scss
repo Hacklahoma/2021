@@ -1,6 +1,15 @@
 @import './constants';
 
 .prizes {
+  a {
+    color: $cyan;
+    font-weight: bold;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
   .prize-container {
     column-gap: 15px;
     display: grid;
@@ -44,6 +53,10 @@
   @media only screen and (max-width: 570px) {
     .prize-container {
       grid-template-columns: auto;
+
+      a {
+        font-size: 1em;
+      }
 
       .prize-item {
         .prize-item-imgcon {
