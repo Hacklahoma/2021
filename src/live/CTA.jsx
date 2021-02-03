@@ -12,17 +12,15 @@ const CTA = () => (
       <div className="step">
         <h2>1. </h2>
         <p className="instruct discord">
-          <span>
-            Join our{' '}
-            <a
-              // href="/"
-              // target="_blank"
-              // rel="noopener noreferrer"
-            >
-              Discord Server
-            </a>{' '}
-            and follow the instructions to check in.
-          </span> Will be announced soon...
+          Join our{' '}
+          <a
+            href="https://discord.gg/4dDphSH6"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Discord Server
+          </a>{' '}
+          and follow the instructions to check in.
         </p>
       </div>
       <div className="step">
