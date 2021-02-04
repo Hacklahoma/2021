@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import ReactPlayer from 'react-player/youtube';
 import { times } from '../live/Schedule';
 import '../styles/stream.scss';
 
@@ -38,6 +39,7 @@ const Stream = () => {
   // 24hrs after start date
   const endDate = new Date(startDate.getTime() + 24 * 60 * 60 * 1000);
 
+  const [playing, setPlaying] = useState(false);
   const [tick, setTick] = useState(new Date());
   const [countdown, setCountdown] = useState({ hours: -1, mins: -1, secs: -1 });
   const [nextEvent, setNextEvent] = useState(times[0]);
@@ -82,9 +84,9 @@ const Stream = () => {
    */
   const updateNextEvent = () => {
     const now = new Date();
-    times.forEach((val) => {
+    times.forEach((val, i) => {
       if (val.time < now) {
-        setNextEvent(val);
+        setNextEvent(times[i + 1]);
       }
     });
   };
@@ -186,8 +188,8 @@ const Stream = () => {
         </div>
         <div className="next-event">
           <h2 className="gradient-text">NEXT EVENT</h2>
-          <p className="time">{formatTime(nextEvent.time)}</p>
-          <p className="name">{nextEvent.name}</p>
+          <p className="time">{nextEvent ? formatTime(nextEvent.time) : 'N/A'}</p>
+          <p className="name">{nextEvent ? nextEvent.name : ''}</p>
         </div>
         <div className="sponsor">
           <h2 className="gradient-text">SPONSORED BY</h2>
@@ -208,8 +210,9 @@ const Stream = () => {
             {renderTimes(false)}
           </div>
         </div>
-        <p className="note">Schedule is in Central Standard Time</p>
+        <p className="note" onClick={() => setPlaying(!playing)}>Schedule is in Central Standard Time</p>
       </div>
+      <ReactPlayer className="video-player" url="https://www.youtube.com/watch?v=3gOlzV1qEjE" playing={playing} />
     </div>
   );
 };

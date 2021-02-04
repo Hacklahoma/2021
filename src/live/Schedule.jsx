@@ -49,7 +49,7 @@ export const times = [
     duration: 30,
   },
   {
-    name:        'React Workshop with Mark Glose from Paycom',
+    name:        'React Workshop with Mark Glose by Paycom',
     description:
       'React has become the leading choice for a frontend framework by companies everywhere. Come learn the basics of React and APIs as we build a simple website that interfaces with a JSON powered backend',
     time:     new Date('2021-02-06T19:15:00Z'),
@@ -57,28 +57,28 @@ export const times = [
   },
   {
     name:
-      'Build a Cloud Connected AR/VR App in 15 Minutes or Less from echoAR',
+      'Build a Cloud Connected AR/VR App in 15 Minutes or Less by echoAR',
     description:
       'The workshop will show how to quickly create AR/VR apps with no technical skills or coding required and scale existing apps by connecting them to the cloud. Workshop participants will learn how to create real-time cloud-connected augmented and virtual reality (AR/VR) apps using the echoAR platform. Participants are encouraged to bring a laptop and a smartphone, or just follow along the live demonstration. Platforms for experimentation include: Google ARCore, WebXR, Vuforia, Unity-based apps, and more.',
     time:     new Date('2021-02-06T20:30:00Z'),
     duration: 60,
   },
   {
-    name:        'HTML Workshop with Jennifer Pham from Hacklahoma',
+    name:        'HTML Workshop with Jennifer Pham by Hacklahoma',
     description:
       'In this workshop, attendees will be building and deploying a website using HTML and CSS! We will be teaching the very basics of HTML and CSS, go into detail about some terminology, and provide skeleton code to get you started. This step-by-step tutorial is meant for beginners with little to no experience with HTML and CSS.',
     time:     new Date('2021-02-06T21:45:00Z'),
     duration: 60,
   },
   {
-    name:        'Design Thinking Workshop with Reagan Shirk from Hacklahoma',
+    name:        'Design Thinking Workshop with Michael Hollinger',
     description:
       'The goal of design thinking is to keep the customer at the forefront of every product. Come learn about design thinking and see why major companies are switching to this mindset when pushing new products and projects.',
     time:     new Date('2021-02-06T23:00:00Z'),
     duration: 60,
   },
   {
-    name:        'Cybersec and Bob Ross MS Paint from MLH',
+    name:        'Cybersec and Bob Ross MS Paint by MLH',
     description:
       'Are you up to the challenge? Join MLH in a Capture the Flag activity sponsored by the US Airforce. This activity will show you the basics and help you build experience to become a master of cybersecurity. Afterwards, kick back and destress with a Bob Ross MS Paint activity. Follow along with Bob as you try to recreate what he does on screen in MS Paint!',
     time:     new Date('2021-02-07T00:15:00Z'),
