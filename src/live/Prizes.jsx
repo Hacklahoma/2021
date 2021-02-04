@@ -186,29 +186,32 @@ const Prizes = () => (
           <div className="prize-item-imgcon">
             <img
               alt="Best Theme"
-              src={require('../images/prizes/echoAR_Cloud.png')}
+              src={require("../images/prizes/echoAR_Cloud.png")}
               className="prize-item-img"
             />
           </div>
           <div className="prize-item-content">
             <h3 className="center">Best echoAR Hack</h3>
             <p>
-              Use echoAR's cloud platform for augmented and virtual reality (AR/VR) to build your
-              project. The winning team will receive a <b>$50 amazon gift card</b> and each member
-              will receive <b>3-month free Business Tier access</b> with the project featured
+              Use echoAR's cloud platform for augmented and virtual reality
+              (AR/VR) to build your project. The winning team will receive a{" "}
+              <b>$50 amazon gift card</b> and each member will receive{" "}
+              <b>3-month free Business Tier access</b> with the project featured
               on their "Inspiration" page.
               <a
                 href="https://console.echoar.xyz/#/auth/register-hackathon?code=Hacklahoma"
                 target="_blank"
                 rel="noopener noreferrer"
-              > Click here for 1-month free Business Tier access
-              </a>.
+              >
+                {" "}
+                Click here for 1-month free Business Tier access
+              </a>
+              .
             </p>
           </div>
         </div>
-
       </div>
-      <p className="note">
+      <p className="note" style={{ textAlign: "center" }}>
         Prizes limited to residents of the United States only <br />
         with the EXCEPTION of MLH prizes which are open to all participants
       </p>

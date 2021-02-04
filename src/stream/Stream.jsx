@@ -1,31 +1,31 @@
-import React, { useEffect, useState } from 'react';
-import ReactPlayer from 'react-player/youtube';
-import { times } from '../live/Schedule';
-import '../styles/stream.scss';
+import React, { useEffect, useState } from "react";
+import ReactPlayer from "react-player/youtube";
+import { times } from "../live/Schedule";
+import "../styles/stream.scss";
 
 const sponsors = [
   {
-    image:    'tailwind.png',
+    image: "tailwind.png",
     duration: 8,
   },
   {
-    image:    'paycom.png',
+    image: "paycom.png",
     duration: 8,
   },
   {
-    image:    'flywheelEnergy.png',
+    image: "flywheelEnergy.png",
     duration: 8,
   },
   {
-    image:    'clevyr.png',
+    image: "clevyr.png",
     duration: 5,
   },
   {
-    image:    'saa.png',
+    image: "saa.png",
     duration: 5,
   },
   {
-    image:    'sga.png',
+    image: "sga.png",
     duration: 5,
   },
 ];
@@ -35,7 +35,7 @@ const sponsors = [
  */
 const Stream = () => {
   // Feb 6, 2021 @ 12:00pm CST
-  const startDate = new Date('2021-02-06T18:00:00Z');
+  const startDate = new Date("2021-02-06T18:00:00Z");
   // 24hrs after start date
   const endDate = new Date(startDate.getTime() + 24 * 60 * 60 * 1000);
 
@@ -109,7 +109,7 @@ const Stream = () => {
    * Formats a number to a string with two digits
    * ex: 2 will return 02
    */
-  const format = (num) => (`0${num}`).slice(-2);
+  const format = (num) => `0${num}`.slice(-2);
 
   /**
    * Formats a number to a string with two digits
@@ -117,12 +117,12 @@ const Stream = () => {
    */
   const formatTime = (time) => {
     let m = time.getMinutes();
-    m = (`0${m}`).slice(-2);
-    let dd = 'AM';
+    m = `0${m}`.slice(-2);
+    let dd = "AM";
     let h = time.getHours();
     if (h >= 12) {
       h -= 12;
-      dd = 'PM';
+      dd = "PM";
     }
     if (h === 0) {
       h = 12;
@@ -140,23 +140,25 @@ const Stream = () => {
     // Iterate through all scheduled times
     times.forEach((val) => {
       if (
-        (saturday && val.time.getDay() === 6)
-      || (!saturday && val.time.getDay() === 0)
+        (saturday && val.time.getDay() === 6) ||
+        (!saturday && val.time.getDay() === 0)
       ) {
-        let classes = 'item';
+        let classes = "item";
 
         // Setup classes
         if (val.time < now) {
-          classes += ' completed';
+          classes += " completed";
         }
 
         results.push(
           <div key={`${val.name}-container`} className={classes}>
             <div className="text">
-              <p className="time"><strong>{formatTime(val.time)} </strong></p>
+              <p className="time">
+                <strong>{formatTime(val.time)} </strong>
+              </p>
               <p>{val.name}</p>
             </div>
-          </div>,
+          </div>
         );
       }
     });
@@ -188,14 +190,19 @@ const Stream = () => {
         </div>
         <div className="next-event">
           <h2 className="gradient-text">NEXT EVENT</h2>
-          <p className="time">{nextEvent ? formatTime(nextEvent.time) : 'N/A'}</p>
-          <p className="name">{nextEvent ? nextEvent.name : ''}</p>
+          <p className="time">
+            {nextEvent ? formatTime(nextEvent.time) : "N/A"}
+          </p>
+          <p className="name">{nextEvent ? nextEvent.name : ""}</p>
         </div>
         <div className="sponsor">
           <h2 className="gradient-text">SPONSORED BY</h2>
           <div className="image">
             {/* eslint-disable-next-line import/no-dynamic-require */}
-            <img src={`${require(`../images/sponsors/${sponsor.image}`)}`} alt={sponsor.image} />
+            <img
+              src={`${require(`../images/sponsors/${sponsor.image}`)}`}
+              alt={sponsor.image}
+            />
           </div>
         </div>
       </div>
@@ -210,9 +217,15 @@ const Stream = () => {
             {renderTimes(false)}
           </div>
         </div>
-        <p className="note" onClick={() => setPlaying(!playing)}>Schedule is in Central Standard Time</p>
+        <p className="note" onClick={() => setPlaying(!playing)}>
+          Schedule is in Central Standard Time
+        </p>
       </div>
-      <ReactPlayer className="video-player" url="https://www.youtube.com/watch?v=3gOlzV1qEjE" playing={playing} />
+      <ReactPlayer
+        className="video-player"
+        url="https://www.youtube.com/watch?v=3gOlzV1qEjE"
+        playing={playing}
+      />
     </div>
   );
 };
