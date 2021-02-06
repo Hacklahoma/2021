@@ -43,13 +43,6 @@
     }
   }
 
-  .note {
-    color: rgba($black, 0.75);
-    float: right;
-    font-size: 0.8em;
-    margin-top: 20px;
-  }
-
   @media only screen and (max-width: 570px) {
     .prize-container {
       grid-template-columns: auto;
@@ -73,4 +66,10 @@
       }
     }
   }
+}
+
+.prize-note {
+  color: rgba($black, 0.75);
+  font-size: 0.8em;
+  margin-top: 20px;
 }

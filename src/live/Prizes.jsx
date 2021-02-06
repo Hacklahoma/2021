@@ -1,6 +1,6 @@
-import React from "react";
-import Section from "../components/Section";
-import "../styles/prizes.scss";
+import React from 'react';
+import Section from '../components/Section';
+import '../styles/prizes.scss';
 
 /**
  * List of prizes and challenges
@@ -14,7 +14,7 @@ const Prizes = () => (
           <div className="prize-item-imgcon">
             <img
               alt="First Place"
-              src={require("../images/prizes/first_place_trophy.png")}
+              src={require('../images/prizes/first_place_trophy.png')}
               className="prize-item-img"
             />
           </div>
@@ -33,7 +33,7 @@ const Prizes = () => (
           <div className="prize-item-imgcon">
             <img
               alt="Second Place"
-              src={require("../images/prizes/second_place_trophy.png")}
+              src={require('../images/prizes/second_place_trophy.png')}
               className="prize-item-img"
             />
           </div>
@@ -51,7 +51,7 @@ const Prizes = () => (
           <div className="prize-item-imgcon">
             <img
               alt="Third Place"
-              src={require("../images/prizes/third_place_trophy.png")}
+              src={require('../images/prizes/third_place_trophy.png')}
               className="prize-item-img"
             />
           </div>
@@ -71,7 +71,7 @@ const Prizes = () => (
           <div className="prize-item-imgcon">
             <img
               alt="Best Beginner"
-              src={require("../images/prizes/best_beginner.png")}
+              src={require('../images/prizes/best_beginner.png')}
               className="prize-item-img"
             />
           </div>
@@ -89,7 +89,7 @@ const Prizes = () => (
           <div className="prize-item-imgcon">
             <img
               alt="Best Design"
-              src={require("../images/prizes/best_design.png")}
+              src={require('../images/prizes/best_design.png')}
               className="prize-item-img"
             />
           </div>
@@ -97,7 +97,7 @@ const Prizes = () => (
             <h3 className="center">Best Design</h3>
             <p>
               This category rewards the best overall designed hack. Each team
-              member of the winning team will receive a{" "}
+              member of the winning team will receive a{' '}
               <b>Mechanical Keyboard and Google Nest Mini</b>.
             </p>
           </div>
@@ -107,14 +107,15 @@ const Prizes = () => (
           <div className="prize-item-imgcon">
             <img
               alt="Best Theme"
-              src={require("../images/prizes/best_theme.png")}
+              src={require('../images/prizes/best_theme.png')}
               className="prize-item-img"
             />
           </div>
           <div className="prize-item-content">
             <h3 className="center">Best Theme</h3>
             <p>
-              This category rewards the best theme for a hack. Each team member
+              This category rewards the best theme for a hack. Hacks considered for
+              this category will embrace our retro theme this year. Each team member
               of the winning team will receive a <b>Blue Yeti Microphone</b>.
               <br />
               <br />
@@ -126,7 +127,7 @@ const Prizes = () => (
           <div className="prize-item-imgcon">
             <img
               alt="Best Domain"
-              src={require("../images/prizes/domain.png")}
+              src={require('../images/prizes/domain.png')}
               className="prize-item-img"
             />
           </div>
@@ -135,7 +136,7 @@ const Prizes = () => (
             <p>
               Register a .tech, .space, or .online domain name using Domain.com
               during the weekend. Each team may submit one entry per person on
-              the team. Each winning team member will receive a{" "}
+              the team. Each winning team member will receive a{' '}
               <b>PowerSquare Qi Wireless Phone Charger & Domain.com Backpack</b>
               .
             </p>
@@ -146,7 +147,7 @@ const Prizes = () => (
           <div className="prize-item-imgcon">
             <img
               alt="Google Cloud"
-              src={require("../images/prizes/google_cloud.png")}
+              src={require('../images/prizes/google_cloud.png')}
               className="prize-item-img"
             />
           </div>
@@ -156,7 +157,7 @@ const Prizes = () => (
               Build your hackathon project with a suite of secure storage,
               powerful compute, and integrated data analytics products provided
               by Google Cloud. See full list of products here: g.co/cloud. Each
-              winning team member will receive a{" "}
+              winning team member will receive a{' '}
               <b>Google Branded Parkland Academy Backpack</b>.
             </p>
           </div>
@@ -166,7 +167,7 @@ const Prizes = () => (
           <div className="prize-item-imgcon">
             <img
               alt="Best Theme"
-              src={require("../images/prizes/digikey.png")}
+              src={require('../images/prizes/digikey.png')}
               className="prize-item-img"
             />
           </div>
@@ -186,7 +187,7 @@ const Prizes = () => (
           <div className="prize-item-imgcon">
             <img
               alt="Best Theme"
-              src={require("../images/prizes/echoAR_Cloud.png")}
+              src={require('../images/prizes/echoAR_Cloud.png')}
               className="prize-item-img"
             />
           </div>
@@ -194,8 +195,8 @@ const Prizes = () => (
             <h3 className="center">Best echoAR Hack</h3>
             <p>
               Use echoAR's cloud platform for augmented and virtual reality
-              (AR/VR) to build your project. The winning team will receive a{" "}
-              <b>$50 amazon gift card</b> and each member will receive{" "}
+              (AR/VR) to build your project. The winning team will receive a{' '}
+              <b>$50 amazon gift card</b> and each member will receive{' '}
               <b>3-month free Business Tier access</b> with the project featured
               on their "Inspiration" page.
               <a
@@ -203,7 +204,7 @@ const Prizes = () => (
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                {" "}
+                {' '}
                 Click here for 1-month free Business Tier access
               </a>
               .
@@ -211,11 +212,11 @@ const Prizes = () => (
           </div>
         </div>
       </div>
-      <p className="note" style={{ textAlign: "center" }}>
-        Prizes limited to residents of the United States only <br />
-        with the EXCEPTION of MLH prizes which are open to all participants
-      </p>
     </div>
+    <p className="prize-note" style={{ textAlign: 'center', marginTop: '15px' }}>
+      Prizes limited to residents of the United States only <br />
+      with the EXCEPTION of MLH prizes which are open to all participants
+    </p>
   </Section>
 );
 
