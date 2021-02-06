@@ -185,15 +185,31 @@
   }
 
   .live-stream {
-    max-width: $content-max-width;
+    max-width: 350px;
+    text-align: center;
     width: $content-width;
 
-    iframe {
-      $aspect-ratio: 0.5625;
-      height: calc(#{$content-width} * 0.5625);
-      max-height: calc(#{$content-max-width} * #{$aspect-ratio});
-      max-width: $content-max-width;
-      width: $content-width;
+    a {
+      color: white;
+      font-weight: 800;
+      height: 20px;
+      text-decoration: none;
+      transition: background 150ms;
+      
+      p {
+        background: $cyan;
+        border-radius: 4px;
+        padding: 7px 14px;
+        transition: transform 150ms;
+      }
+
+      &:hover {
+        background: #21797c;
+
+        p {
+          transform: translate(1.5px, -1px);
+        }
+      }
     }
   }
 

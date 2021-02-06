@@ -6,13 +6,13 @@ import '../styles/live.scss';
  */
 const LiveStream = () => (
   <div id="live-stream" className="live-stream">
-    <iframe
-      title="Hacklahoma Live Stream"
-      src="https://www.youtube.com/embed/PSTAnfcfDIo"
-      frameBorder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowFullScreen
-    />
+    <a
+      href="https://youtu.be/PSTAnfcfDIo"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <p>Click here to watch the live stream!</p>
+    </a>
   </div>
 );
 
