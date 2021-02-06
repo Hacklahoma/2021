@@ -264,7 +264,7 @@ const Schedule = () => {
           <div key={`${val.name}-container`} className={classes}>
             <div className="text">
               <p>
-                <strong>{formatTime(val.time)} </strong>
+                <strong>{formatTime(val.time)} ({getTimezoneName()}) </strong>
                 <span>{val.name}</span>
               </p>
             </div>
@@ -280,7 +280,7 @@ const Schedule = () => {
           >
             <button onClick={handleClick}>
               <p>
-                <strong>{formatTime(val.time)} </strong>
+                <strong>{formatTime(val.time)} ({getTimezoneName()}) </strong>
                 <span>{val.name}</span>
               </p>
               <ExpandIcon />

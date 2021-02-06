@@ -114,8 +114,10 @@ const Prizes = () => (
           <div className="prize-item-content">
             <h3 className="center">Best Theme</h3>
             <p>
-              This category rewards the best theme for a hack. Each team member
-              of the winning team will receive a <b>Blue Yeti Microphone</b>.
+              This category rewards the best theme for a hack. Hacks considered
+              for this category will embrace our retro theme this year. Each
+              team member of the winning team will receive a{" "}
+              <b>Blue Yeti Microphone</b>.
               <br />
               <br />
             </p>
@@ -211,12 +213,15 @@ const Prizes = () => (
           </div>
         </div>
       </div>
-      <p className="note" style={{ textAlign: "center" }}>
-        Prizes limited to residents of the United States only <br />
-        with the EXCEPTION of MLH and echoAR prizes which are open to all
-        participants
-      </p>
     </div>
+    <p
+      className="prize-note"
+      style={{ textAlign: "center", marginTop: "15px" }}
+    >
+      Prizes limited to residents of the United States only <br />
+      with the EXCEPTION of MLH and echoAR prizes which are open to all
+      participants
+    </p>
   </Section>
 );
 
