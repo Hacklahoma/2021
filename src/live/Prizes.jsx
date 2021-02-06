@@ -213,7 +213,8 @@ const Prizes = () => (
       </div>
       <p className="note" style={{ textAlign: "center" }}>
         Prizes limited to residents of the United States only <br />
-        with the EXCEPTION of MLH prizes which are open to all participants
+        with the EXCEPTION of MLH and echoAR prizes which are open to all
+        participants
       </p>
     </div>
   </Section>
