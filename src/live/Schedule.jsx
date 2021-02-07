@@ -147,7 +147,7 @@ export const times = [
   },
   {
     name:     'Closing ceremony',
-    time:     new Date('2021-02-07T18:45:00Z'),
+    time:     new Date('2021-02-07T19:15:00Z'),
     duration: 30,
   },
 ];
