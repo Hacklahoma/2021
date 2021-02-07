@@ -17,12 +17,8 @@ const Header = () => (
             Attend a 24 hour <strong>virtual</strong> innovation marathon with
             the <strong>University of Oklahoma</strong>!
           </p>
-          <a
-            href="/live"
-            className="register"
-          >
-            <p>LIVE!</p>
-          </a>
+          <p className="thanks">THANKS FOR HACKING WITH US!</p>
+          <p className="thanks">SEE YOU NEXT YEAR!</p>
         </div>
       </div>
     </div>

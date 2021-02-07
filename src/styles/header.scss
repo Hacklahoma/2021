@@ -68,6 +68,12 @@
       .subtitle {
         margin: 15px 0 35px;
         max-width: 390px;
+
+      }
+
+      .thanks {
+        color: $cyan;
+        font-weight: bold;
       }
 
       .register {
@@ -146,6 +152,10 @@
         .subtitle {
           margin: 5px 0;
           max-width: 250px;
+        }
+
+        .thanks {
+          font-size: 0.75em;
         }
 
         .register {
